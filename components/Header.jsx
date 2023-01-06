@@ -1,23 +1,23 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const links = [
   {
-    label: "Home",
-    route: "/",
+    label: 'Home',
+    route: '/'
   },
   {
-    label: "Destination",
-    route: "/destination",
+    label: 'Destination',
+    route: '/destination'
   },
   {
-    label: "Crew",
-    route: "/crew",
+    label: 'Crew',
+    route: '/crew'
   },
   {
-    label: "Technology",
-    route: "/technology",
-  },
-];
+    label: 'Technology',
+    route: '/technology'
+  }
+]
 
 export function Header() {
   return (
@@ -32,5 +32,5 @@ export function Header() {
         </ul>
       </nav>
     </header>
-  );
+  )
 }

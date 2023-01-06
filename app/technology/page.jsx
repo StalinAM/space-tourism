@@ -1,3 +1,3 @@
 export default function TechnologyPage() {
-  return <h2>Technology</h2>;
+  return <h2>Technology</h2>
 }
