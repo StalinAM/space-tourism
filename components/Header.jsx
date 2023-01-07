@@ -1,6 +1,8 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Header.module.css'
+import { usePathname } from 'next/navigation'
 
 const links = [
   {
@@ -22,19 +24,38 @@ const links = [
 ]
 
 export function Header() {
+  const pathname = usePathname()
+  console.log(pathname)
   return (
     <header>
       <nav className={styles.container_nav}>
-        <Image width="48" height="48" src="/logo.svg" alt="logo" />
+        <Image
+          className={styles.img}
+          width="48"
+          height="48"
+          src="/logo.svg"
+          alt="logo"
+        />
         <div className={styles.slash}></div>
-        <ul className={styles.container}>
-          {links.map(({ label, route }, index) => (
-            <li key={route} className={`${styles.container} ${styles.item}`}>
-              <span>0{index + 1}</span>
-              <Link href={route}>{label.toUpperCase()}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className={styles.container_blur}>
+          <ul className={styles.container}>
+            {links.map(({ label, route }, index) => (
+              <li key={route} className={`${styles.container} ${styles.item}`}>
+                <Link href={route}>
+                  <span>0{index + 1}</span>
+                  {label.toUpperCase()}
+                </Link>
+                <div
+                  className={`${styles.line} ${
+                    pathname == route || pathname.includes(label.toLowerCase())
+                      ? styles.opacity
+                      : ''
+                  }`}
+                ></div>
+              </li>
+            ))}
+          </ul>
+        </div>
       </nav>
     </header>
   )
