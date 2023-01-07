@@ -1,8 +1,10 @@
 import data from '../../data/data.json'
+import styles from './Destination.module.css'
 import Link from 'next/link'
 export default function DestinationLayout({ children }) {
   return (
-    <main>
+    <main className={styles.container}>
+      <div className={styles.background}></div>
       <h2>
         <span>01</span>PICK YOUR DESTINATION
       </h2>
