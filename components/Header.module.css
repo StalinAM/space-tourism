@@ -1,11 +1,26 @@
+.container_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+  gap: 1rem;
+}
+.slash {
+  width: 100%;
+  height: 3px;
+  background-color: var(--opacity);
+}
 .container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  font-size: 1.125rem;
+  color: var(--title);
 }
 .item {
   gap: 0.3rem;
 }
 .container span {
-  color: var(--opacity);
+  color: var(--subtitle);
 }
