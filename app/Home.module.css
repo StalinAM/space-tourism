@@ -10,7 +10,7 @@
   z-index: -1;
 }
 .container {
-  height: calc(100vh - 182px);
+  height: var(--height_main);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -39,6 +39,7 @@
   color: var(--subtitle);
   line-height: 32px;
   text-align: justify;
+  letter-spacing: 1.5px;
 }
 .explore {
   width: 17rem;
@@ -48,7 +49,6 @@
   z-index: 1;
   position: relative;
   font-size: 2rem;
-  
 }
 .explore:hover {
   box-shadow: var(--opacity) 0px 0px 0px 60px;

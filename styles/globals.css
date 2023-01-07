@@ -2,6 +2,7 @@
   --subtitle: #d0d6f9;
   --title: #ffffff;
   --opacity: rgba(255, 255, 255, 0.189);
+  --height_main: calc(100vh - 182px);
 }
 *,
 *::before,
@@ -11,7 +12,6 @@
   padding: 0;
 }
 body {
-  background-color: rgb(99, 96, 96);
   overflow-x: hidden;
   min-height: 100vh;
 }
