@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Link from 'next/link'
+import styles from './Header.module.css'
 
 const links = [
   {
@@ -7,7 +9,7 @@ const links = [
   },
   {
     label: 'Destination',
-    route: '/destination'
+    route: '/destination/moon'
   },
   {
     label: 'Crew',
@@ -23,10 +25,13 @@ export function Header() {
   return (
     <header>
       <nav>
-        <ul>
-          {links.map(({ label, route }) => (
-            <li key={route}>
-              <Link href={route}>{label}</Link>
+        <Image width="48" height="48" src="/logo.svg" alt="logo" />
+        <div></div>
+        <ul className={styles.container}>
+          {links.map(({ label, route }, index) => (
+            <li key={route} className={`${styles.container} ${styles.item}`}>
+              <span>0{index + 1}</span>
+              <Link href={route}>{label.toUpperCase()}</Link>
             </li>
           ))}
         </ul>
