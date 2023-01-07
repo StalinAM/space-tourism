@@ -10,9 +10,35 @@
   z-index: -1;
 }
 .container {
-  height: calc(100vh - 144px);
+  height: calc(100vh - 182px);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 9rem;
+  text-align: center;
+}
+.container div h2 {
+  font-size: 1.75rem;
+  letter-spacing: 4.75px;
+  color: var(--subtitle);
+  text-transform: uppercase;
+}
+.container div h1 {
+  color: var(--title);
+  font-size: 9.4rem;
+  text-transform: uppercase;
+}
+.container div p {
+  font-size: 1.25rem;
+  color: var(--subtitle);
+  line-height: 32px;
+  text-align: justify;
 }
 .explore {
   width: 17rem;
@@ -22,6 +48,11 @@
   z-index: 1;
   position: relative;
   font-size: 2rem;
+  
+}
+.explore:hover {
+  box-shadow: var(--opacity) 0px 0px 0px 60px;
+  transition: all 0.3s ease-in-out 0s;
 }
 .explore_link {
   position: absolute;
