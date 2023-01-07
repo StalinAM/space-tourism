@@ -25,7 +25,6 @@ const links = [
 
 export function Header() {
   const pathname = usePathname()
-  console.log(pathname)
   return (
     <header>
       <nav className={styles.container_nav}>
