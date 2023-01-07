@@ -24,9 +24,9 @@ const links = [
 export function Header() {
   return (
     <header>
-      <nav>
+      <nav className={styles.container_nav}>
         <Image width="48" height="48" src="/logo.svg" alt="logo" />
-        <div></div>
+        <div className={styles.slash}></div>
         <ul className={styles.container}>
           {links.map(({ label, route }, index) => (
             <li key={route} className={`${styles.container} ${styles.item}`}>
