@@ -1,7 +1,14 @@
 import Link from 'next/link'
+import styles from './Home.module.css'
+import { Bellefair } from '@next/font/google'
+const fontBellefair = Bellefair({
+  subsets: ['latin'],
+  weight: ['400']
+})
 export default function Page() {
   return (
-    <main>
+    <main className={styles.container}>
+      <div className={styles.background}></div>
       <div>
         <h2>So, you want to travel to</h2>
         <h1>Space</h1>
@@ -12,7 +19,10 @@ export default function Page() {
           experience!
         </p>
       </div>
-      <Link href="/">EXPLORE</Link>
+      <button className={`${fontBellefair.className} ${styles.explore}`}>
+        <Link className={styles.explore_link} href="/destination/moon"></Link>
+        EXPLORE
+      </button>
     </main>
   )
 }
