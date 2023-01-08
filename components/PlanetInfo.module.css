@@ -13,8 +13,9 @@
   text-align: start;
   gap: 1rem;
 }
+
 .container h1 {
-  font-size: 6.25rem;
+  font-size: 6.5rem;
   color: var(--title);
   text-transform: uppercase;
 }
