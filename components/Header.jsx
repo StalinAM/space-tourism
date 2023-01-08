@@ -15,7 +15,7 @@ const links = [
   },
   {
     label: 'Crew',
-    route: '/crew'
+    route: '/crew/dougla'
   },
   {
     label: 'Technology',
