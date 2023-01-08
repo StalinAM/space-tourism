@@ -16,11 +16,11 @@
   height: var(--height_main);
   justify-items: start;
   align-items: center;
-  align-content: center;
+  align-content: stretch;
   row-gap: 1rem;
+  padding: 0 5rem;
 }
 .container h2 {
-  margin-left: 5rem;
   font-size: 1.75rem;
   color: var(--title);
   grid-column: 1/3;

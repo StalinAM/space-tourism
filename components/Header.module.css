@@ -33,6 +33,8 @@
 .item {
   position: relative;
   cursor: pointer;
+  letter-spacing: 2.7px;
+  font-size: 1.125rem;
 }
 .item:hover {
   color: var(--title);
@@ -40,6 +42,7 @@
 .item span {
   color: var(--title);
   margin-right: 0.3rem;
+  font-weight: 600;
 }
 .item::before {
   content: '';
