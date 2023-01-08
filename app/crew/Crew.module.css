@@ -1,56 +1,72 @@
 .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(/crew/background-crew-desktop.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    z-index: -1;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3rem 3rem auto;
-    height: var(--height_main);
-    justify-items: start;
-    align-items: center;
-    align-content: center;
-    row-gap: 1rem;
-  }
-  .container h2 {
-    margin-left: 5rem;
-    font-size: 1.75rem;
-    color: var(--title);
-    grid-column: 1/3;
-    grid-row: 1/2;
-  }
-  .container h2 span {
-    margin-right: 2rem;
-    color: var(--subtitle);
-  }
-  .container_nav {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: flex;
-    gap: 3rem;
-    margin-left: 9rem;
-  }
-  .container li {
-    font-size: 1.65rem;
-    color: var(--title);
-    position: relative;
-  }
-  .line {
-    position: absolute;
-    height: 3px;
-    background-color: var(--title);
-    bottom: -12px;
-    transition: 0.3s;
-    width: 0;
-  }
-  .opacity {
-    width: 100%;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 3rem auto 3rem;
+  height: var(--height_main);
+  justify-items: start;
+  align-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+}
+.container h2 {
+  margin-left: 5rem;
+  font-size: 1.75rem;
+  color: var(--title);
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.container h2 span {
+  margin-right: 2rem;
+  color: var(--subtitle);
+}
+.container_nav {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  gap: 3rem;
+  margin-left: 9rem;
+  margin-bottom: 11rem;
+}
+.container li {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--opacity);
+  position: relative;
+}
+.container li:hover {
+  background-color: var(--title);
+  transition: 0.5s;
+}
+.container li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  top: 0;
+  transition: 0.3s;
+}
+.opacity {
+  z-index: 3;
+  background-color: var(--title);
+}
