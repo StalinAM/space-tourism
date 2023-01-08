@@ -15,12 +15,13 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  padding: 0 5rem;
 }
 .container div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 9rem;
+  padding: 0 8rem;
   text-align: center;
 }
 .container div h2 {
@@ -28,11 +29,13 @@
   letter-spacing: 4.75px;
   color: var(--subtitle);
   text-transform: uppercase;
+  font-weight: 400;
 }
 .container div h1 {
   color: var(--title);
   font-size: 9.4rem;
   text-transform: uppercase;
+  font-weight: 400;
 }
 .container div p {
   font-size: 1.25rem;
@@ -49,6 +52,7 @@
   z-index: 1;
   position: relative;
   font-size: 2rem;
+  font-weight: 400;
 }
 .explore:hover {
   box-shadow: var(--opacity) 0px 0px 0px 60px;
