@@ -1,0 +1,80 @@
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/technology/background-technology-desktop.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+.container {
+  display: grid;
+  grid-template-columns: 8rem 40% auto;
+  grid-template-rows: 3rem auto;
+  height: var(--height_main);
+  justify-items: start;
+  align-content: stretch;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 0 5rem;
+}
+.container h2 {
+  color: var(--title);
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.container h2 span {
+  margin-right: 2rem;
+  color: var(--opacity);
+  font-size: 1.75rem;
+}
+.container_nav {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.container li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.1rem;
+  height: 5.1rem;
+  border-radius: 50%;
+  background-color: var(--opacity);
+  position: relative;
+}
+.container li span {
+  font-size: 2.5rem;
+}
+.container li:hover {
+  background-color: var(--title);
+  transition: 0.5s;
+}
+.container li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+}
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: none;
+  top: 0;
+  transition: 0.3s;
+}
+.opacity {
+  z-index: 3;
+  background-color: var(--title);
+}
+.color{
+    color: blac;
+}

@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 1rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.container h3 {
+  font-size: 2rem;
+  color: var(--subtitle);
+  text-transform: uppercase;
+}
+.container h1 {
+  font-size: 3.5rem;
+  color: var(--title);
+  text-transform: uppercase;
+}
+.container p {
+  text-align: justify;
+  line-height: 32px;
+  letter-spacing: 1.5px;
+  color: var(--subtitle);
+  font-size: 1.3rem;
+  font-family: 'Barlow Condensed';
+}
+.planet_img {
+  width: auto;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  transform: scale(1.2);
+  margin-left: 25%;
+}
