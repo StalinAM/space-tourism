@@ -11,7 +11,7 @@ const fontBarlow = Barlow_Condensed({
   weight: ['400']
 })
 
-export default function Planets({ params }) {
+export default function Person({ params }) {
   const { id } = params
   const objId = data.crew.find((item) => item.id == id)
   return (
