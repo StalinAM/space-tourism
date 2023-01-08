@@ -3,6 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Header.module.css'
 import { usePathname } from 'next/navigation'
+import { Barlow_Condensed } from '@next/font/google'
+
+const fontBarlow = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: ['400', '600']
+})
 
 const links = [
   {
@@ -19,7 +25,7 @@ const links = [
   },
   {
     label: 'Technology',
-    route: '/technology'
+    route: '/technology/launch-vehicle'
   }
 ]
 
@@ -40,7 +46,7 @@ export function Header() {
           <ul className={styles.container}>
             {links.map(({ label, route }, index) => (
               <li key={route} className={`${styles.container} ${styles.item}`}>
-                <Link href={route}>
+                <Link className={fontBarlow.className} href={route}>
                   <span>0{index + 1}</span>
                   {label.toUpperCase()}
                 </Link>
