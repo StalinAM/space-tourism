@@ -11,7 +11,7 @@ const fontBarlow = Barlow_Condensed({
 export function PlanetsInfo({ data }) {
   return (
     <>
-      <Image width="200" height="200" src={data.image} alt={data.name} />
+      <Image className={styles.planet_img} width="200" height="200" src={data.image} alt={data.name} />
       <div className={`${styles.container} ${fontBellefair.className}`}>
         <h1 className={fontBellefair.className}>{data.name}</h1>
         <p className={fontBarlow.className}>{data.description}</p>
