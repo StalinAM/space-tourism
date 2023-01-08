@@ -3,7 +3,7 @@ import data from '../../data/data.json'
 import styles from './Crew.module.css'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-export default function CrewLayout({children}) {
+export default function CrewLayout({ children }) {
   const pathname = usePathname()
   return (
     <main className={styles.container}>
@@ -14,11 +14,9 @@ export default function CrewLayout({children}) {
       <ul className={styles.container_nav}>
         {data.crew.map((item, index) => (
           <li key={item.id}>
-            <Link href={`/crew/${item.id}`}>
-              {item.name.toUpperCase()}
-            </Link>
+            <Link href={`/crew/${item.id}`}></Link>
             <div
-              className={`${styles.line} ${
+              className={`${styles.circle} ${
                 pathname == item.id || pathname.includes(item.id)
                   ? styles.opacity
                   : ''
