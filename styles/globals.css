@@ -1,7 +1,7 @@
 :root {
   --subtitle: #d0d6f9;
   --title: #ffffff;
-  --opacity: rgba(255, 255, 255, 0.189);
+  --opacity: rgba(255, 255, 255, 0.374);
   --height_main: calc(100vh - 182px);
 }
 *,

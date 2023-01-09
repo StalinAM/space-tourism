@@ -11,11 +11,13 @@
   font-size: 2rem;
   color: var(--subtitle);
   text-transform: uppercase;
+  font-weight: 400;
 }
 .container h1 {
   font-size: 3.5rem;
   color: var(--title);
   text-transform: uppercase;
+  font-weight: 400;
 }
 .container p {
   text-align: justify;
