@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 0 8rem;
+  padding: 0 4rem;
   text-align: center;
 }
 .container div h2 {
@@ -55,7 +55,7 @@
   font-weight: 400;
 }
 .explore:hover {
-  box-shadow: var(--opacity) 0px 0px 0px 60px;
+  box-shadow: rgb(255 255 255 / 15%) 0px 0px 0px 60px;
   transition: all 0.3s ease-in-out 0s;
 }
 .explore_link {
@@ -65,4 +65,40 @@
   width: 100%;
   height: 100%;
   color: #0b0d17;
+}
+
+@media screen and (max-width: 1080px) {
+  .background {
+    background-image: url(/home/background-home-tablet.jpg);
+  }
+  .container {
+    padding: 0 2rem;
+    gap: 1rem;
+  }
+  .container div {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .background {
+    background-image: url(/home/background-home-mobile.jpg);
+  }
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+  .container div h2 {
+    font-size: 1.5rem;
+  }
+  .container div h1 {
+    font-size: 8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .container {
+    gap: 1rem;
+  }
+  .container div h1 {
+    font-size: 6rem;
+  }
 }
