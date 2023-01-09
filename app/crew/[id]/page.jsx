@@ -1,13 +1,14 @@
 import data from '../../../data/data.json'
 import Image from 'next/image'
 import styles from './Person.module.css'
-import { Bellefair, Barlow_Condensed } from '@next/font/google'
+import { Bellefair, Barlow } from '@next/font/google'
 
 const fontBellefair = Bellefair({
   subsets: ['latin'],
   weight: ['400']
 })
-const fontBarlow = Barlow_Condensed({
+const fontBarlow = Barlow({
+  subsets: ['latin'],
   weight: ['400']
 })
 

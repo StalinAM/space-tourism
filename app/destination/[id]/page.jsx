@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import data from '../../../data/data.json'
 import styles from './PlanetInfo.module.css'
-import { Bellefair, Barlow } from '@next/font/google'
+import { Bellefair, Barlow, Barlow_Condensed } from '@next/font/google'
 
 const fontBellefair = Bellefair({
   subsets: ['latin'],
@@ -11,7 +11,10 @@ const fontBarlow = Barlow({
   subsets: ['latin'],
   weight: ['400']
 })
-
+const fontBarlowC = Barlow_Condensed({
+  subsets: ['latin'],
+  weight: ['400']
+})
 export default function Planets({ params }) {
   const { id } = params
   const objId = data.destinations.find((item) => item.id == id)
@@ -26,15 +29,15 @@ export default function Planets({ params }) {
       />
       <div className={`${styles.container} ${fontBellefair.className}`}>
         <h1>{objId.name}</h1>
-        <p className={fontBarlow.className}>{objId.description}</p>
+        <p className={fontBarlowC.className}>{objId.description}</p>
         <div className={styles.line}></div>
         <div className={styles.features}>
           <p>
-            <span className={fontBarlow.className}>AVG. DISTANCE</span>
+            <span className={fontBarlowC.className}>AVG. DISTANCE</span>
             {objId.distance}
           </p>
           <p>
-            <span className={fontBarlow.className}>Est. travel time</span>
+            <span className={fontBarlowC.className}>Est. travel time</span>
             {objId.travel}
           </p>
         </div>
