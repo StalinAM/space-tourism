@@ -1,5 +1,5 @@
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,21 +39,21 @@
   grid-row: 3/4;
   display: flex;
   gap: 2rem;
-  margin-left: 9rem;
+  margin-left: 4rem;
   margin-bottom: 11rem;
 }
-.container li {
+.container_nav li {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: var(--opacity);
   position: relative;
 }
-.container li:hover {
+.container_nav li:hover {
   background-color: var(--title);
   transition: 0.5s;
 }
-.container li a {
+.container_nav li a {
   position: absolute;
   top: 0;
   left: 0;
@@ -73,4 +73,33 @@
 .opacity {
   z-index: 3;
   background-color: var(--title);
+}
+@media screen and (max-width: 1080px) {
+  .container {
+    padding: 0 2rem;
+  }
+  .background {
+    background-image: url(/crew/background-crew-tablet.jpg);
+  }
+  .container_nav {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: min-content;
+    grid-template-rows: 3rem 1fr 4rem 1fr;
+    column-gap: 0;
+    row-gap: 2rem;
+    height: 100%;
+    padding: 1.5rem;
+  }
+  .background {
+    background-image: url(/crew/background-crew-mobile.jpg);
+  }
+  .container_nav {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    margin: 0;
+  }
 }
