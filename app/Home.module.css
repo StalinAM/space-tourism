@@ -1,5 +1,5 @@
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -75,8 +75,12 @@
     padding: 0 2rem;
     gap: 1rem;
   }
+
   .container div {
     padding: 0;
+  }
+  .container div h1 {
+    font-size: 6rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -86,6 +90,7 @@
   .container {
     grid-template-columns: 1fr;
     padding: 1.5rem;
+    height: 100%;
   }
   .container div h2 {
     font-size: 1.5rem;
