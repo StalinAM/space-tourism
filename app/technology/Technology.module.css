@@ -1,5 +1,5 @@
 .background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -11,7 +11,7 @@
 }
 .container {
   display: grid;
-  grid-template-columns: 8rem 40% auto;
+  grid-template-columns: 5rem 1fr 1fr;
   grid-template-rows: 3rem auto;
   height: var(--height_main);
   justify-items: start;
@@ -19,6 +19,7 @@
   align-items: center;
   row-gap: 1rem;
   padding: 0 5rem;
+  column-gap: 2.5rem;
 }
 .container h2 {
   font-size: 1.75rem;
@@ -81,4 +82,21 @@
 }
 .color {
   color: #151414 !important;
+}
+@media screen and (max-width: 1080px) {
+  .container {
+    padding: 0 2rem;
+    column-gap: 1rem;
+  }
+  .background {
+    background-image: url(/technology/background-technology-tablet.jpg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .background {
+    background-image: url(/technology/background-technology-mobile.jpg);
+  }
 }

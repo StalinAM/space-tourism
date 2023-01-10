@@ -1,6 +1,5 @@
 .planet_img {
-  margin-top: 2rem;
-  margin-left: 9rem;
+  margin: auto;
   width: 30rem;
   height: 30rem;
   grid-column: 1/2;
@@ -9,7 +8,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 0 9rem;
+  padding: 0 4rem;
   text-align: start;
   gap: 1rem;
 }
@@ -49,4 +48,33 @@
   color: var(--subtitle);
   font-size: 1.125rem;
   text-transform: none;
+}
+@media screen and (max-width: 1080px) {
+  .planet_img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .container {
+    padding: 0;
+  }
+  .features p {
+    font-size: 1.65rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    column-gap: 0;
+  }
+  .container h1 {
+    font-size: 5rem;
+  }
+  .planet_img {
+    width: 15rem;
+    height: 15rem;
+    grid-row: 2/3;
+  }
+}
+@media screen and (max-width: 480px) {
 }
