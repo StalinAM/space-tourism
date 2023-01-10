@@ -28,12 +28,12 @@ export default function Tech({ params }) {
         </h1>
         <p className={fontBarlow.className}>{objId.description}</p>
       </div>
-      <picture>
+      <picture className={styles.container_img}>
         <source media="(min-width: 800px )" srcSet={objId.image.portrait} />
         <Image
           className={styles.planet_img}
-          width="400"
-          height="500"
+          width="515"
+          height="527"
           src={objId.image.landscape}
           alt={objId.name}
         ></Image>

@@ -32,7 +32,7 @@ const links = [
 
 export function Header() {
   const pathname = usePathname()
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
   return (
     <header>
       <nav className={styles.container_nav}>
