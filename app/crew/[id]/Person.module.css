@@ -30,22 +30,19 @@
   width: auto;
   grid-column: 2/3;
   grid-row: 2/4;
-  transform: scale(1.2);
   margin: 0 auto;
 }
 @media screen and (max-width: 1080px) {
   .container {
     padding: 0;
   }
-  .planet_img {
-    transform: scale(0.9);
-  }
 }
 @media screen and (max-width: 768px) {
   .planet_img {
     grid-column: 1/2;
     grid-row: 4/5;
-    transform: scale(0.6);
+    width: 19rem;
+    height: auto;
   }
   .container h1 {
     font-size: 2.5rem;
@@ -53,7 +50,7 @@
   .container h3 {
     font-size: 1.2rem;
   }
-  .container p{
+  .container p {
     font-size: 1.1rem;
   }
 }
