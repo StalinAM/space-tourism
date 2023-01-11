@@ -1,3 +1,67 @@
+# Frontend Mentor - Space tourism website solution
+
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+
+## Table of contents
+
+- [Frontend Mentor - Space tourism website solution](#frontend-mentor---space-tourism-website-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+    - [Built with](#built-with)
+  - [Author](#author)
+  - [Getting Started](#getting-started)
+  - [Learn More](#learn-more)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
+
+### Screenshot
+
+Desktop Version
+
+![](./public/readme/screenshot-desktop.webp)
+
+![](./public/readme/screenshot-desktop2.webp)
+
+![](./public/readme/screenshot-desktop3.webp)
+
+![](./public/readme/screenshot-desktop4.webp)
+
+Mobile Version
+
+![](./public/readme/screenshot-mobile.webp.webp)
+
+![](./public/readme/screenshot-mobile-menu.webp.webp)
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/StalinAM/space-tourism.git)
+- Live Site URL: [StalinAM](https://space-tourism-svam.vercel.app/)
+
+### Built with
+
+- [Next.js](https://nextjs.org/)
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- JavaScript
+
+## Author
+
+- GitHub - [StalinAM](https://github.com/StalinAM)
+- Frontend Mentor - [@StalinAM](https://www.frontendmentor.io/profile/StalinAM)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -28,9 +92,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
