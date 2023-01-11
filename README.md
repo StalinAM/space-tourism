@@ -39,9 +39,9 @@ Desktop Version
 
 Mobile Version
 
-![](./public/readme/screenshot-mobile.webp.webp)
+![](./public/readme/screenshot-mobile.webp)
 
-![](./public/readme/screenshot-mobile-menu.webp.webp)
+![](./public/readme/screenshot-mobile-menu.webp)
 
 ### Links
 
